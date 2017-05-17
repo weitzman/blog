@@ -1,7 +1,7 @@
 ---
 title: Drush 6 Released, Moves to Github.
 ---
-## Drush 6 Release
+### Drush 6 Release
 
 
 The [Drush team](https://github.com/drush-ops/drush/graphs/contributors) is thrilled to announce [the release of Drush 6](https://github.com/drush-ops/drush/releases/tag/6.0.0). Full release notes are there. 
@@ -12,7 +12,7 @@ Please come to [our lab at Drupalcon Prague](https://prague2013.drupal.org/sessi
 
 Note: if you are using Drupal 8, you should stick with a frequently updated clone of master branch. Drush 6 supports Drupal 6+7 but not Drupal 8.
 
-## Drush Project Moves to Github
+### Drush Project Moves to Github
 
 
 The Drush project has [moved to Github](https://github.com/drush-ops/drush). Update your clones! 

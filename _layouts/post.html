@@ -11,14 +11,30 @@ layout: default
 	</div>
 </article>
 
-<form method="POST" action="https://api.staticman.net/v2/entry/weitzman/blog/master/comments">
-	<input name="options[redirect]" type="hidden" value="http://weitzman.github.io/blog">
+
+<form class="pure-form pure-form-aligned" method="POST" action="https://api.staticman.net/v2/entry/weitzman/blog/master/comments">
 	<!-- e.g. "2016-01-02-this-is-a-post" -->
 	<input name="options[slug]" type="hidden" value="{{ page.slug }}">
-	<label><input name="fields[name]" type="text">Name</label>
-	<label><input name="fields[email]" type="email">E-mail</label>
-	<label><textarea name="fields[message]"></textarea>Message</label>
 
-	<button type="submit">Go!</button>
+	<fieldset>
+		<div class="pure-control-group">
+			<label for="name">Name</label>
+			<input id="name" type="text" placeholder="Name">
+			<span class="pure-form-message-inline"></span>
+		</div>
+
+		<div class="pure-control-group">
+			<label for="email">Email</label>
+			<input id="email" type="email" placeholder="Email">
+		</div>
+
+		<div class="pure-control-group">
+			<label for="message">Message</label>
+			<input id="message" type="text" placeholder="Say something...">
+		</div>
+
+		<div class="pure-controls">
+			<button type="submit" class="pure-button pure-button-primary">Submit</button>
+		</div>
+	</fieldset>
 </form>
-

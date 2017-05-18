@@ -30,7 +30,6 @@ Remote path: /var/www/drupal
 ##### On the remote server:
 
 1. Enable and configure the Xdebug PHP extension on the remote server. Use `php --ini` to figure out which ini file to edit. Then add:
-
 ```
 zend_extension=xdebug.so
 xdebug.remote_enable=1
@@ -38,7 +37,6 @@ xdebug.remote_host=127.0.0.1
 xdebug.remote_port=9000
 
 ```
-
 1. Use `php -i | grep -i xdebug` to verify that your edits are working (i.e. remote_enable is _enabled_).
 1. In a terminal on the remote server, run a PHP CLI script such as `XDEBUG_CONFIG=  vendor/bin/drush st`. The first clause sets a required environment variable to null value. We only need this variable to be defined. It triggers XDebug to connect back to PHPStorm.
 1. If prompted about _Path Mappings_, choose to pull them from the Deployment specified above. 

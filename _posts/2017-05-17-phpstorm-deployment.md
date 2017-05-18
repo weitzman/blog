@@ -9,7 +9,16 @@ This blog is a terse "how-to". Refer to [Sync changes and automatic upload to a 
 
 ### Remote Deployment
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1. Start creating a new Deployment configuration: `Tools => Deployment => Configuration`
+1. Enter a name and pick SFTP for the type.
+1. On the connection tab, enter the SSH details for remote server.
+1. On the Mappings tab, tell PHP storm how the remote path maps to the local path. In my case:
+ ```
+Local path: /Users/moshe.weitzman/reps/b4
+Remote path: /var/www/drupal
+```
+1. Test by browsing the remote host: `Tools => Deployment => Browse Remote Hosts`
+1. You may now upload from local to remote via `Tools => Deployment => Upload To [name]`. Explore other options in this menu that may better suit your use case.
 
 ### Remote CLI Debugging over an SSH Tunnel
 

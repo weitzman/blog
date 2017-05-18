@@ -1,12 +1,8 @@
 ---
 title: Drush 6 Released, Moves to Github.
 ---
-### Drush 6 Release
 
-
-The [Drush team](https://github.com/drush-ops/drush/graphs/contributors) is thrilled to announce [the release of Drush 6](https://github.com/drush-ops/drush/releases/tag/6.0.0). Full release notes are there. 
-
-The highlight of Drush 6 is the new [outputformat system](https://github.com/drush-ops/drush/blob/8.x-6.x/docs/output-formats.html). You can now request Drush output in easily parsed formats like json, csv, yaml etc.
+The [Drush team](https://github.com/drush-ops/drush/graphs/contributors) is thrilled to announce [the release of Drush 6](https://github.com/drush-ops/drush/releases/tag/6.0.0). Full release notes are there.  The highlight of Drush 6 is the new [outputformat system](https://github.com/drush-ops/drush/blob/8.x-6.x/docs/output-formats.html). You can now request Drush output in easily parsed formats like json, csv, yaml etc.
 
 Please come to [our lab at Drupalcon Prague](https://prague2013.drupal.org/session/drush-optimizations-your-development-workflow) for in-depth discussion and hand-on learning about Drush 6.
 

@@ -8,7 +8,7 @@ This blog is a terse "how-to". Refer to [Sync changes and automatic upload to a 
 
 ### Remote Deployment
 
-1. Start creating a new Deployment configuration: `Tools => Deployment => Configuration`
+1. Start creating a new Deployment configuration: _Tools => Deployment => Configuration_
 1. Enter a name and pick SFTP for the type.
 1. On the connection tab, enter the SSH details for remote server.
 1. On the Mappings tab, tell PHP storm how the remote path maps to the local path. In my case:
@@ -16,8 +16,8 @@ This blog is a terse "how-to". Refer to [Sync changes and automatic upload to a 
 Local path: /Users/moshe.weitzman/reps/b4
 Remote path: /var/www/drupal
 ```
-1. Test by browsing the remote host: `Tools => Deployment => Browse Remote Hosts`
-1. You may now upload from local to remote via `Tools => Deployment => Upload To [name]`. Explore other options in this menu that may better suit your use case.
+1. Test by browsing the remote host: _Tools => Deployment => Browse Remote Hosts_
+1. You may now upload from local to remote via _Tools => Deployment => Upload To [name]_. Explore other options in this menu that may better suit your use case.
 
 ### Remote CLI Debugging over an SSH Tunnel
 
@@ -30,6 +30,7 @@ Remote path: /var/www/drupal
 ##### On the remote server:
 
 1. Enable and configure the Xdebug PHP extension on the remote server. Use `php --ini` to figure out which ini file to edit. Then add:
+
 ```
 zend_extension=xdebug.so
 xdebug.remote_enable=1
@@ -37,9 +38,10 @@ xdebug.remote_host=127.0.0.1
 xdebug.remote_port=9000
 
 ```
+
 1. Use `php -i | grep -i xdebug` to verify that your edits are working (i.e. remote_enable is _enabled_).
 1. In a terminal on the remote server, run a PHP CLI script such as `XDEBUG_CONFIG=  vendor/bin/drush st`. The first clause sets a required environment variable to null value. We only need this variable to be defined. It triggers XDebug to connect back to PHPStorm.
-1. @todo ***Path Mappings*** 
+1. If prompted about _Path Mappings_, choose to pull them from the Deployment specified above. 
 
 ### Troubleshooting
 

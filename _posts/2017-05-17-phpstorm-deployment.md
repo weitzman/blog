@@ -23,9 +23,9 @@ Remote path: /var/www/drupal
 
 ##### On your local machine:
 
-1. Run => Start listening for PHP Debug Connections
-1. Run => Break at the first line in PHP scripts
-1. In a terminal on local machine, run a command like `ssh -R 9000:localhost:9000 -A username@host`. The -R arguments creates a SSH tunnel such that port 9000 on the remote server forwards all traffic to port 9000 on your local machine. This neatly bypasses any networking challenges between you and the remote machine. Customize username@host for your own needs.
+1. _Run => Start listening for PHP Debug Connections_
+1. _Run => Break at the first line in PHP scripts_
+1. In a terminal on local machine, run a command like `ssh -R 9000:localhost:9000 -A username@host`. The -R arguments creates a SSH tunnel such that port 9000 on the remote server forwards all traffic to port 9000 on your local machine. This neatly bypasses any networking challenges between you and the remote machine. Customize _username@host_ for your own needs.
 
 ##### On the remote server:
 

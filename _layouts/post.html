@@ -15,7 +15,7 @@ layout: default
 <form class="pure-form pure-form-aligned" method="POST" action="https://api.staticman.net/v2/entry/weitzman/blog/master/comments">
 	<!-- e.g. "2016-01-02-this-is-a-post" -->
 	<input name="options[slug]" type="hidden" value="{{ page.slug }}">
-
+	<input name="options[redirect]" type="hidden" value="https://weitzman.github.io/blog">
 	<fieldset>
 		<div class="pure-control-group">
 			<label for="fields[name]">Name</label>
@@ -30,10 +30,11 @@ layout: default
 
 		<div class="pure-control-group">
 			<label for="fields[message]">Message</label>
-			<input id="fields[message]" name="fields[message]" type="text" placeholder="Say something...">
+			<input id="fields[message]" name="fields[message]" type="text" placeholder="Enter text. Markdown is allowed.">
 		</div>
 
 		<div class="pure-controls">
+			<legend><em>Comments will appear after moderation.</em></legend>
 			<button type="submit" class="pure-button pure-button-primary">Submit</button>
 		</div>
 	</fieldset>

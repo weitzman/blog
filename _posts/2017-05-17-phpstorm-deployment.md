@@ -1,5 +1,5 @@
 ---
-title: PHPStorm Remote Deployment and Debugging
+title: PHPStorm Remote Deployment & CLI Debugging
 ---
 I've long preferred doing web development on my local laptop. Unfortunately, my current consulting gig has unusual requirements. Specifically, I'm migrating content from an Oracle database into Drupal. The Oracle database is behind an IP based VPN - I can't connect to it via a particular AWS instance that's running our Drupal 8 site. My PHP has to run at AWS, and can't run locally. Happily, PHPStorm thrives in this situation. PHPStorm Deployments sync code from my laptop to AWS via SSH. Further, I'll show how to configure the Debugger to step through remote execution of PHP CLI scripts. Remember kids, the debugger is your friend.
 

@@ -1,7 +1,7 @@
 ---
 title: PHPStorm Remote Deployment & CLI Debugging
 ---
-I've long preferred doing web development on my local laptop. Unfortunately, my current consulting gig has unusual requirements. Specifically, I'm migrating content from an Oracle database into Drupal. The Oracle database is behind an IP based VPN - I can't connect to it via a particular AWS instance that's running our Drupal 8 site. My PHP has to run at AWS, and can't run locally. Happily, PHPStorm thrives in this situation. PHPStorm Deployments sync code from my laptop to AWS via SSH. Further, I'll show how to configure the Debugger to step through remote execution of PHP CLI scripts. Remember kids, the debugger is your friend.
+I've long preferred doing web development on my local laptop. Unfortunately, my current consulting gig has strict requirements. Specifically, I'm again migrating content from an Oracle database into Drupal 8. This time, the Oracle database is behind an IP based VPN - I can only connect to it via a specific AWS instance that's running our Drupal 8 site. My PHP has to run at AWS, and can't run locally. Happily, PHPStorm thrives in this situation. PHPStorm Deployments sync code from my laptop to AWS via SSH. Further, I'll show how to configure the Debugger to step through remote execution of PHP CLI scripts. Remember kids, the debugger is your friend.
 
 
 This blog is a terse "how-to". Refer to [Sync changes and automatic upload to a deployment server in PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/Sync+changes+and+automatic+upload+to+a+deployment+server+in+PhpStorm) and [Remote Debugging in PHPStorm via SSH Tunnel](https://confluence.jetbrains.com/display/PhpStorm/Remote+debugging+in+PhpStorm+via+SSH+tunnel) for more detail.
@@ -18,6 +18,8 @@ Remote path: /var/www/drupal
 ```
 1. Test by browsing the remote host: _Tools => Deployment => Browse Remote Hosts_
 1. You may now upload from local to remote via _Tools => Deployment => Upload To [name]_. Explore other options in this menu that may better suit your use case.
+
+![Remote Deployment example](https://confluence.jetbrains.com/download/attachments/53332386/synchronize-changes-diff.png?version=2&modificationDate=1393423399000&api=v2)
 
 ### Remote CLI Debugging over an SSH Tunnel
 

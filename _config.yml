@@ -1,6 +1,6 @@
 # Site settings
 title: Moshe Weitzman's Blog
-description: "Musings on Drupal, Continous Integration, and Data Migration."
+description: "Musings on Drupal, Continuous Integration, and Data Migration."
 url: "http://weitzman.github.io/blog"
 author:
   name: "Moshe Weitzman"
@@ -24,6 +24,8 @@ destination: ./_site
 permalink: /:title
 paginate: 8
 paginate_path: /page:num/
+webmaster_verifications:
+  google: 1dCWhFtRvRx2RD6tDzW8uHQhQMHS_R9XKu7eou5gmwU
 
 # Default values
 defaults:
@@ -39,6 +41,8 @@ defaults:
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-sitemap
 
 # Custom variables
 version: "1.1.0"

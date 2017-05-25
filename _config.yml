@@ -1,11 +1,20 @@
 # Site settings
-title: Moshe Weitzman
-description: "https://www.tumblr.com/blog/weitzman"
+title: Moshe Weitzman's Blog
+description: "Musings on Drupal, Continous Integration, and Data Migration."
 url: "http://weitzman.github.io/blog"
 author:
   name: "Moshe Weitzman"
   email: "weitzman@tejasa.com"
-  url: "http://weitzman.github.io/blog"
+  url: "http://weitzman.github.io"
+twitter:
+  username: weitzman
+social:
+  name: Moshe Weitzman
+  links:
+    - https://twitter.com/weitzman
+    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/weitzman
+    - https://github.com/weitzman
 
 # Build settings
 baseurl: /blog # Change this to your relative path (ex: /blog/), or leave just a /
@@ -24,10 +33,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      image: https://farm8.staticflickr.com/7206/26816763756_64aef5bf41_b.jpg
 
 # Plugins
 gems:
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # Custom variables
 version: "1.1.0"

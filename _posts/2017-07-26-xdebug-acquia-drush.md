@@ -17,4 +17,6 @@ This blog is a terse "how-to". Refer to [Acquia - Configuring Xdebug with PhpSto
     1. The two -d options enable and configure XDebug extension for the current request.
     1. The `/vendor/bin/drush` path points to the site-local Drush. Older Drupal sites that are not built with Composer can just use `drush` instead.
     1. `core-status` is just an example command. Replace with your own command and arguments/options.
+    
+![Debugging Drush commands at Acquia](https://confluence.jetbrains.com/download/attachments/54345259/zend_server_tutorial_18.png?version=1&modificationDate=1410292135000&api=v2) 
  

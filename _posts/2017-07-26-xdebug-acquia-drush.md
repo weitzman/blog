@@ -2,7 +2,7 @@
 title: Debugging Drush commands at Acquia
 image: https://confluence.jetbrains.com/download/attachments/54345259/zend_server_tutorial_18.png?version=1&modificationDate=1410292135000&api=v2
 ---
-Its a repeating need for me to debug Drush commands that run at [Acquia Cloud](https://www.acquia.com/products-services/acquia-cloud). When I say "debug", I refer to step-wise debugging via Xdebug. This is the best and only way to slay hard bugs. Down with print_r() debugging! 
+It is a repeating need for me to debug Drush commands that run at [Acquia Cloud](https://www.acquia.com/products-services/acquia-cloud). When I say "debug", I refer to step-wise debugging via Xdebug. This is the best and only way to slay hard bugs. Down with print_r() debugging! 
 
 This blog is a terse "how-to". Refer to [Acquia - Configuring Xdebug with PhpStorm](https://docs.acquia.com/article/configuring-xdebug-phpstorm) for more detail.
 
@@ -13,7 +13,7 @@ This blog is a terse "how-to". Refer to [Acquia - Configuring Xdebug with PhpSto
 1. In your local PHPStorm project, _Run => Start listening for PHP Debug Connections_
 1. In your local PHPStorm project, _Run => Break at the first line in PHP scripts_
 1. Back in your terminal window that is ssh-ed into Acquia, run `XDEBUG_CONFIG= php -dzend_extension=xdebug.so -dxdebug.remote_enable=1  ../vendor/bin/drush core-status`
-    1. The environment variable `XDEBUG_CONFIG=` has no value because none is needed. This nudges XDebug to connect.
+    1. The environment variable `XDEBUG_CONFIG=` has no value because none is needed. This nudges XDebug to connect back to PHPStorm.
     1. The two -d options enable and configure XDebug extension for the current request.
     1. The `/vendor/bin/drush` path points to the site-local Drush. Older Drupal sites that are not built with Composer can just use `drush` instead.
     1. `core-status` is just an example command. Replace with your own command and arguments/options.

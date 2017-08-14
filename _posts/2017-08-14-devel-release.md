@@ -1,6 +1,6 @@
 ---
 title: Devel Releases 1.0 for Drupal 8.
-image: {{ site.url }}/assets/devel/webprofiler.gif 
+image: https://github.com/weitzman/blog/raw/master/assets/devel/webprofiler.gif 
 ---
 With pride and pleasure, the Devel maintainers have released [1.0 for Drupal 8](*****). Even at the ripe age of 14, Devel is an active, popular, and nimble project. Devel has been downloaded 3.5M times, and 200,000 sites currently report Devel as an enabled project. Devel's whole codebase was deeply improved in this release. A few highlights are below, with annotated screenshots and gifs below each section. Please upgrade and report your success or failure using the new features!
 

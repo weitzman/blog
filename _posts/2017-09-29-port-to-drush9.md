@@ -4,9 +4,9 @@ image: https://github.com/weitzman/blog/raw/master/assets/drush-port/core-requir
 ---
 Drush 9 features a deep rewrite of our app, both user facing and internals. We created and open sourced [AnnotatedCommand](https://github.com/consolidation/annotated-command) ([example]((https://github.com/drush-ops/drush/blob/3ada88d72d654c20c57de7f1f5cbac396e033b2e/src/Drupal/Commands/core/DrupalCommands.php#L95-L119))), [OutputFormatters](output-formatters), and [Config](https://github.com/consolidation/config). We leveraged Symfony Console for our CLI fundamentals. For details on Drush9, see the [video](https://youtu.be/FNzXI_VRF48) or [slides](https://docs.google.com/presentation/d/1syT5-fv4nc6yct3q4G9YWvvGsU3sFJSxUrtXHoQjvPo/edit?usp=sharing) from our [Drupalcon Vienna presentation](https://events.drupal.org/vienna2017/sessions/drush-9-lean-and-modern).
 
-![Annotated Command example]({{ site.url }}/assets/drush-port/core-requirements.png)
+![Annotated Command example]({{ site.url }}/assets/drush-port/core-requirements.png "An example Annotated Command")
 
-Unfortunately, old commandfiles such as example.drush.inc no longer load in Drush 9. We've made it relatively painless to port this code to Drush 9. The video below shows the drush generate command and the class it generates. More etailed instructions are below the video.
+Unfortunately, old commandfiles such as example.drush.inc no longer load in Drush 9. We've made it relatively painless to port this code to Drush 9. The video below shows the drush generate command and the class it generates. More detailed instructions are below the video.
 
 <script type="text/javascript" src="https://asciinema.org/a/epC3MGuQwvMiTskfkhBIlKmDL.js" id="asciicast-epC3MGuQwvMiTskfkhBIlKmDL" async></script>
 

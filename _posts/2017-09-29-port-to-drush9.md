@@ -6,7 +6,7 @@ Drush 9 features a deep rewrite of our app, both user facing and internals. We c
 
 ![Annotated Command example]({{ site.url }}/assets/drush-port/core-requirements.png "An example Annotated Command")
 
-Unfortunately, old commandfiles such as example.drush.inc no longer load in Drush 9. We've made it relatively painless to port this code to Drush 9. The video below shows the drush generate command porting the [migrate commands](http://cgit.drupalcode.org/migrate_tools/tree/migrate_tools.drush.inc). Detailed instructions are below the video.
+Unfortunately, old commandfiles such as example.drush.inc no longer load in Drush 9 (since beta5). We've made it relatively painless to port this code to Drush 9. The video below shows the drush generate command porting the [migrate commands](http://cgit.drupalcode.org/migrate_tools/tree/migrate_tools.drush.inc). Detailed instructions are below the video.
 
 <script type="text/javascript" src="https://asciinema.org/a/epC3MGuQwvMiTskfkhBIlKmDL.js" id="asciicast-epC3MGuQwvMiTskfkhBIlKmDL" async></script>
 

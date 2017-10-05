@@ -1,0 +1,5 @@
+_id: 2da0e280-a991-11e7-aa22-3549a2bf08d6
+name: Pedro
+email: 8911d2a32b0a2d3473b6c77b27e0e4a5
+message: "Many thanks for the guide Moshe! very useful when porting commands.\r\n\r\nA couple of questions: \r\n- Is there any particular way to move the dt() function to a $this->t() or something like that?\r\n- Do the $options array replace drush_get_option?\r\n- Has drush_print_table() been replaced by something else?"
+date: 1507182666

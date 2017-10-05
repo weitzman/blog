@@ -1,0 +1,5 @@
+_id: d94c7a70-a9a7-11e7-aa22-3549a2bf08d6
+name: Moshe Weitzman
+email: ece255bf6866464c79a8e9844c6eb3b4
+message: "Hi Pedro. Thanks for commenting.\r\n\r\n1. Lets discuss at https://github.com/drush-ops/drush/issues/3015\r\n1. Yes. I've updated the blog post.\r\n1. Yes. See the screenshot at top of this post for an example of how commands print a table. You can also grep for `@field-labels`."
+date: 1507192403

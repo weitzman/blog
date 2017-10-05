@@ -18,10 +18,11 @@ Unfortunately, old commandfiles such as example.drush.inc no longer load in Drus
 	1. drush.services.yml. No edits are needed unless you want to inject Drupal dependencies into your class (e.g. [yml](http://cgit.drupalcode.org/devel/tree/drush.services.yml), [class](http://cgit.drupalcode.org/devel/tree/src/Commands/DevelCommands.php).
 	1. ExampleCommands.php: Each item in `example_drush_command()` in your old commandfile has been transformed into an Annotated method in a new ExampleCommands file. Copy the body of your command callback functions into the corresponding method in ExampleCommands. Then modernize the code as below. Compare the  [Drush9 commands](https://github.com/drush-ops/drush/tree/master/src/Drupal/Commands) versus the [Drush8 commands](https://github.com/drush-ops/drush/tree/8.x/commands) for guidance.
 		1. Replace `drush_log()` with `$this->logger()->info()` or `$this->logger()->warning()` or similar.
-		2. Replace `drush_set_error()` with `throw new \Exception()`
-		3. Replace `drush_print()` with `$this->output()->writeln()`
-		4. Replace `drush_sitealias_get_record()` as with `$this->siteAliasManager()->getSelf()`. From there you can call getRoot(), getUri(), legacyRecord(), and other handy methods. In order for this to work, edit your class to implement SiteAliasManagerAwareInterface ([LoginCommands](https://github.com/drush-ops/drush/blob/master/src/Commands/core/LoginCommands.php) is an example). 
-		5. Optional - move user interaction to a [@hook interact](https://github.com/consolidation/annotated-command/blob/2.7.0/README.md#hooks). [Also, note the new `$this-io()->confirm()` and `$this->io()->ask()` methods](https://github.com/drush-ops/drush/blob/master/src/Style/DrushStyle.php#L8).
+		1. Replace `drush_get_option('foo')` with `$options['foo'']`
+		1. Replace `drush_set_error()` with `throw new \Exception()`
+		1. Replace `drush_print()` with `$this->output()->writeln()`
+		1. Replace `drush_sitealias_get_record()` as with `$this->siteAliasManager()->getSelf()`. From there you can call getRoot(), getUri(), legacyRecord(), and other handy methods. In order for this to work, edit your class to implement SiteAliasManagerAwareInterface ([LoginCommands](https://github.com/drush-ops/drush/blob/master/src/Commands/core/LoginCommands.php) is an example). 
+		1. Optional - move user interaction to a [@hook interact](https://github.com/consolidation/annotated-command/blob/2.7.0/README.md#hooks). [Also, note the new `$this-io()->confirm()` and `$this->io()->ask()` methods](https://github.com/drush-ops/drush/blob/master/src/Style/DrushStyle.php#L8).
 1. Run `drush cr` to add your commandfile to the Drupal container.
 1. Congrats - your commands are now runnable in Drush9! 
 	1. Please post a patch if Example is a Contrib module. 

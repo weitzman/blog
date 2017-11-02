@@ -1,0 +1,5 @@
+_id: a08c4b10-bfc9-11e7-9a95-93d98d54c65b
+name: Eric Mulder
+email: ddf9e1ba2d7df00f0317eebede7d1a17
+message: "Would this also still work for drush command provided by themes? I am currently trying to port the zurb_foundation subtheme command but it simply doesn't show up in my list of available drush commands. I have done multiple drush cr / drush cc drush command to make sure caching is not the culprit here.\r\n\r\nAny thoughts are welcome."
+date: 1509625836

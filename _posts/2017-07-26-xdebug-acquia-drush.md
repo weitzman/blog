@@ -8,9 +8,9 @@ This blog is a terse "how-to". Refer to [Acquia - Configuring Xdebug with PhpSto
 
 1. SSH with a tunnel: `drush @massgov.prod -v --ssh-options="-R 9000:localhost:9000" ssh`
     1. Replace `@massgov.prod` with your own site alias
-    1. This command connects to Acquia via SSH *AND* opens a tunnel from Acquia's port 9000 to your laptop's port 9000. This allows PHP on Acquia to connect to your PHPStorm no matter what firewall separates you. If your site alias (e.g. @massgov.prod) already defines ssh-options option, then above needs to be changes as follows:
-        1. If using Drush9, you may make a CLI request with --ssh-options='-R 9000:localhost:9000 ADD STUFF FROM ALIAS HERE'.
-        1. If using Drush8, you must edit your alias to add the -R 9000:localhost:9000. You can't add that from the CLI. 
+    1. This command connects to Acquia via SSH *AND* opens a tunnel from Acquia's port 9000 to your laptop's port 9000. This allows PHP on Acquia to connect to your PHPStorm no matter what firewall separates you. If your site alias (e.g. @massgov.prod) already defines ssh-options option, then above needs to be changed as follows:
+        1. If using Drush9, you may make a CLI request with `--ssh-options='-R 9000:localhost:9000 ADD STUFF FROM ALIAS HERE'`.
+        1. If using Drush8, you must edit your alias to add the `-R 9000:localhost:9000`. You can't add that from the CLI.
     1. To verify that the tunnel is working, you can run `netstat -nlt | grep 9000` in same terminal window. If you see output, you are good.
 1. In your local PHPStorm project, _Run => Start listening for PHP Debug Connections_
 1. In your local PHPStorm project, _Run => Break at the first line in PHP scripts_

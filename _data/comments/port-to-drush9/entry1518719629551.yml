@@ -1,0 +1,5 @@
+_id: c3948570-127e-11e8-936c-053a4ee5c3bb
+name: Mark Dorison
+email: e55492c3200d9a36ad724a384fcd93d0
+message: "While attempting to port an older global drush command, I followed the porting instructions which generated the necessary Drush code, but I was getting a `CommandNotFoundException` when attempting to run the command. The command was not discovered by drush because it wasn't part of an enabled module.\r\n\r\nIf this is your issue, either create a module_name.info.yml file manually, or run drush generate module, then enable the module in question."
+date: 1518719629

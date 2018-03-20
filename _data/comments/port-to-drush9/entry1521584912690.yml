@@ -1,0 +1,5 @@
+_id: 057545f0-2c8e-11e8-9bb2-7f618526731d
+name: Dan Feidt
+email: c104ffa787aa7db42e83fefc92f9910c
+message: "Small thing to add:\r\nThere is another existing signature of the old function:\r\n```drush_get_option('foo', false) ```\r\nwhere if there is no result, the statement returns false.\r\n(see http://www.drupalcontrib.org/api/drupal/contributions%21drush%21includes%21context.inc/function/drush_get_option/7 )\r\n\r\nToday I crunched out a drush 9 patch for drupalmoduleupgrader:\r\nhttps://www.drupal.org/project/drupalmoduleupgrader/issues/2949601\r\nIt might actually work now in some cases. Give it a try!"
+date: 1521584912

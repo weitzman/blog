@@ -1,0 +1,9 @@
+_id: 47a263e0-3756-11e8-ad5e-83fb05789426
+name: Moshe Weitzman
+email: ece255bf6866464c79a8e9844c6eb3b4
+message: >-
+  Yes. See https://github.com/drush-ops/drush/pull/3447 for altering the
+  annotations and
+  https://github.com/consolidation/annotated-command/#replace-command-hook for
+  altering the command method itself.
+date: 1522770434

@@ -1,0 +1,5 @@
+_id: 1c4cefd0-3747-11e8-ad5e-83fb05789426
+name: MPP
+email: 4939026c9edced5e987b831c428d7bf1
+message: "These hooks are no longer available:\r\n* hook_drush_help_alter\r\n* hook_drush_command_alter\r\n\r\nCan they be replaced by extending the existing commands?"
+date: 1522763919

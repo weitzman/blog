@@ -11,9 +11,6 @@ For now, I encourage folks to use d.o. sandboxes or Github to host their forks, 
 
 Feedback welcome.
 
-{% gist d332e7f8c18a97fcc0d37a625d2cf8db %}
-
-
 ---------------------
 Start from a clean 8.0.x:
 <pre>

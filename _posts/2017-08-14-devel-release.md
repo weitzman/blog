@@ -37,4 +37,4 @@ With pride and pleasure, the Devel maintainers have released [1.0 for Drupal 8](
 - Supports Drush 8 and [Drush 9](https://github.com/drush-ops/drush/releases).
  
 
-<p style="background-color: #008A3C; color: white; padding: 10px;">Moshe is available for hire as a solo consultant or as a duo with the inimatable Campbell Vertesi. Moshe has worked on Drupal core since 2001, and loves mentoring Drupal teams. Moshe loves to set up CI and developer workflows for PHP/JS teams.</p>
+<p style="background-color: #008A3C; color: white; padding: 10px;">Moshe is available for hire as a consultant. Moshe has worked on Drupal core since 2001, and loves mentoring Drupal teams. Moshe loves to set up CI and developer workflows for PHP/JS teams.</p>

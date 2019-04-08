@@ -34,4 +34,4 @@ I'm in #drush on [IRC](https://www.drupal.org/irc) and [Slack](https://www.drupa
 Note that `drush generate` knows how to generate controllers, plugins, config, services, libraries, etc. A blog post about generate is coming soon.
 
 
-<p style="background-color: #008A3C; color: white; padding: 10px;">Moshe is available for hire as a solo consultant or as a duo with the inimatable Campbell Vertesi. Moshe has worked on Drupal core since 2001, and loves mentoring Drupal teams. Moshe loves to set up CI and developer workflows for PHP/JS teams.</p>
+<p style="background-color: #008A3C; color: white; padding: 10px;">Moshe is available for hire as a consultant. Moshe has worked on Drupal core since 2001, and loves mentoring Drupal teams. Moshe loves to set up CI and developer workflows for PHP/JS teams.</p>

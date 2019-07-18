@@ -4,7 +4,7 @@ image: https://confluence.jetbrains.com/download/attachments/54345259/zend_serve
 ---
 It is a repeating need for me to debug Drush commands that run at [Acquia Cloud](https://www.acquia.com/products-services/acquia-cloud). When I say "debug", I refer to step-wise debugging via Xdebug. This is the best and only way to slay hard bugs. Down with print_r() debugging! 
 
-This blog is a terse "how-to". Refer to [Acquia - Configuring Xdebug with PhpStorm](https://docs.acquia.com/article/configuring-xdebug-phpstorm) for more detail.
+This blog is a terse "how-to". Refer to [Acquia - Configuring Xdebug with PhpStorm](https://support.acquia.com/hc/en-us/articles/360006231933-How-to-debug-an-Acquia-Cloud-environment-using-PhpStorm-and-Remote-Xdebug) for more detail.
 
 1. SSH with a tunnel: `drush @massgov.prod -v --ssh-options="-R 9000:localhost:9000" ssh`
     1. Replace `@massgov.prod` with your own site alias

@@ -11,7 +11,7 @@ If you maintain a Contrib module, please consider moving it to DrupalSpoons. If 
 
 If you like my proposal, please [retweet](https://twitter.com/weitzman/status/1262775567386136577?s=20) and [join](https://gitlab.com/drupalspoons/webmasters/-/blob/master/docs/onboarding_user.md)! I led prior movements in Drupal like [groups.drupal.org](https://www.drupal.org/forum/general/news-and-announcements/2007-01-03/groupsdrupalorg-launches-on-drupal-5) and [#D7CX pledge](https://web.archive.org/web/20140726220349/http://cyrve.com/d7cx), and [Drupal Code of Conduct](https://groups.drupal.org/dcoc). These movements only succeed with early _vocal_ support.
 
-To discuss this blog post and DrupalSpoons in general, lets use [this issue](https://gitlab.com/drupalspoons/webmasters/-/issues/23). Please bring your most positive self :)
+To discuss this blog post and DrupalSpoons in general, lets use [this issue](https://gitlab.com/drupalspoons/webmasters/-/issues/23) or [#drupalspoons](https://drupal.slack.com/archives/C013MP4UKC0) on Drupal Slack. Please bring your most positive self :)
 
 P.S. I never set out to build a Drupal project platform. A Devel co-maintainer asked me to fix our Travis tests. I did so on Gitlab.com and it Corona-spiralled from there. "[If you wish to make an apple pie from scratch, you must first invent the universe](https://youtu.be/7s664NsLeFM)" -- Carl Sagan.
 

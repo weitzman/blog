@@ -1,7 +1,7 @@
 # Site settings
 title: Moshe Weitzman's Blog
 description: "Musings on Drupal, Continuous Integration, DrupalSpoons, and Data Migration."
-url: "http://weitzman.github.io"
+url: "http://weitzman.github.io/blog"
 author:
   name: "Moshe Weitzman"
   email: "weitzman@tejasa.com"

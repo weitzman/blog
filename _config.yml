@@ -40,7 +40,8 @@ defaults:
 # Plugins
 gems:
   - jekyll-paginate
-  - jekyll-seo-tag
+# disabled as its canonical url was blog/blog. cant fix.
+#  - jekyll-seo-tag
   - jekyll-gist
   - jekyll-sitemap
 

@@ -1,5 +1,5 @@
 ---
-title: Announcing DrupalSpoons - a full featured home for Contrib
+title: Announcing DrupalSpoons
 image: https://github.com/weitzman/blog/raw/master/assets/drupalspoons/devel_issues.png 
 ---
 

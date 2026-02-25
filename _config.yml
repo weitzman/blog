@@ -1,6 +1,6 @@
 # Site settings
 title: Moshe Weitzman's Blog
-description: "Musings on Drupal, Continuous Integration, DrupalSpoons, and Data Migration."
+description: "Musings on Drupal, Continuous Integration, Drush, and Testing."
 url: "http://weitzman.github.io/blog"
 author:
   name: "Moshe Weitzman"

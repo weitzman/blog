@@ -21,6 +21,6 @@ We've had a few attempts at a CLI in Drupal core over the years. These attempts 
 
 My end goal here is the death of Drush. It has served an incredibly long and useful life. Its death will be its most impactful and generous act.
 
-Along the way, we may lose some niceties like Drush config and Site aliases. Platforms already have solutions for replacements aliases such as Lagoon (Amazee), Terminus (Pantheon), acli (Acquia), etc. Others should check out [Pssh](https://linux.die.net/man/1/pssh) or [Fabric](https://docs.fabfile.org/en/latest/) or our a Drush-centric solution [ash](https://github.com/jonpugh/ash) by @jonpush
+Along the way, we may lose some niceties like Drush config and Site aliases. Platforms already have solutions for replacements aliases such as Lagoon (Amazee), Terminus (Pantheon), acli (Acquia), etc. Others should check out [Pssh](https://linux.die.net/man/1/pssh) or [Fabric](https://docs.fabfile.org/en/latest/) or our a Drush-centric solution [ash](https://github.com/jonpugh/ash) by @jonpugh
 
 Until the death is complete, it is trivial to run Drush commands along with Drupal commands. Sites will have years to convert their scripts to use `drupal` instead. Drush support will continue through this transition.

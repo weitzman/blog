@@ -18,15 +18,21 @@
 
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<title>Moshe Weitzman’s Blog | Musings on Drupal, Continuous Integration, Testing, and Data Migration.</title>
-	<meta property="og:title" content="Moshe Weitzman’s Blog" />
+	<meta property="og:title" content="{{ page.title | default: site.title | escape }}" />
 	<meta name="author" content="Moshe Weitzman" />
 	<meta property="og:locale" content="en_US" />
 <!--	<link rel="canonical" href="http://weitzman.github.io/blog" />-->
 <!--	<meta property="og:url" content="http://weitzman.github.io/blog" />-->
 	<meta property="og:site_name" content="Moshe Weitzman’s Blog" />
+{% if page.image %}
+	{% if page.image contains '://' %}{% assign og_image = page.image %}{% else %}{% assign og_image = site.url | replace: 'http://', 'https://' | append: page.image %}{% endif %}
+	<meta property="og:image" content="{{ og_image }}" />
+	<meta name="twitter:image" content="{{ og_image }}" />
+	<meta name="twitter:card" content="summary_large_image" />
+{% else %}
 	<meta name="twitter:card" content="summary" />
-	<meta property="twitter:title" content="Moshe Weitzman’s Blog" />
+{% endif %}
+	<meta property="twitter:title" content="{{ page.title | default: site.title | escape }}" />
 	<meta name="twitter:site" content="@weitzman" />
 	<meta name="twitter:creator" content="@Moshe Weitzman" />
 	<meta name="google-site-verification" content="1dCWhFtRvRx2RD6tDzW8uHQhQMHS_R9XKu7eou5gmwU" />

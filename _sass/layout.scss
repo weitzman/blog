@@ -200,6 +200,7 @@ img[title="Emerald"] {
   }
 
 code {
+  font-size: 0.875em; /* monospace x-height is taller than Source Sans Pro's */
   color: lighten($text-color, 35%);
   background-color: lighten($background-color, 35%);
 }
